@@ -1,7 +1,5 @@
 import Link from "next/link";
 import { Icon } from "./Icons";
-import { amazonUrl } from "./links";
-import { navLinks } from "./navLinks";
 
 export default function Footer() {
   return (
@@ -10,15 +8,15 @@ export default function Footer() {
         <div className="footer-top">
           <Link href="/" className="logo"><strong>EMIL IMBRO</strong><small>Fate Gave Me Two Lives</small></Link>
           <div className="socials">
-            <a href="#" aria-label="Facebook"><Icon name="facebook" /></a>
-            <a href="#" aria-label="Instagram"><Icon name="instagram" /></a>
-            <a href="#" aria-label="X"><Icon name="twitter" /></a>
-            <a href="#" aria-label="LinkedIn"><Icon name="linkedin" /></a>
-          </div>
+            <a href="https://www.facebook.com/EmilImbroAuthor/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><Icon name="facebook" /></a>
+            <a href="https://www.instagram.com/emilimbroauthor?stkn=eDh4MjlhMTAzNG94" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><Icon name="instagram" /></a>          </div>
         </div>
         <div className="footer-bottom">
-          <span>&copy; 2026 Emil Imbro. All rights reserved. Powered by <a href="https://fortunepublishers.com/" target="_blank" rel="noopener noreferrer">Fortune Publishers</a></span>
-          <nav>{navLinks.map((l) => <Link key={l.href} href={l.href}>{l.label}</Link>)}<a href={amazonUrl} target="_blank" rel="noopener noreferrer">Buy on Amazon</a></nav>
+          <span>&copy; 2026 Emil Imbro. All rights reserved.</span>
+          <a href="https://fortunepublishers.com/" target="_blank" rel="noopener noreferrer" className="powered-by">
+            <small>Powered by</small>
+            <img src="/images/fortune-publishers-logo.png" alt="Fortune Publishers" />
+          </a>
         </div>
       </div>
     </footer>
