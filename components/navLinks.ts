@@ -1,7 +1,6 @@
 export const navLinks = [
-  { href: "/book", label: "The Book" },
+  { href: "/book", label: "About Book" },
   { href: "/journey", label: "Journey" },
-  { href: "/about", label: "About" },
-  { href: "/places", label: "Places" },
+  { href: "/about", label: "About Author" },
   { href: "/contact", label: "Contact" },
 ];

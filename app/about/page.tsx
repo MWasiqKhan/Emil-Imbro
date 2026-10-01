@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Icon } from "@/components/Icons";
 import PageHero from "@/components/PageHero";
 import About from "@/components/About";
+import Gallery from "@/components/Gallery";
 import CtaBand from "@/components/CtaBand";
 import { places } from "@/components/Places";
 
@@ -21,13 +21,14 @@ export default function AboutPage() {
   return (
     <>
       <PageHero
-        crumb="About"
+        crumb="About Author"
         eyebrow="Meet the Author"
         title={<>Emil <em>Imbro</em></>}
         lead="Brooklyn-born memoirist, Italian heritage writer and world traveler. Now living near Ft. Lauderdale with his wife."
       />
 
       <About />
+      <Gallery />
 
       <section className="values">
         <div className="container">
@@ -56,11 +57,11 @@ export default function AboutPage() {
           <ol className="trail">
             {places.map((p, i) => (
               <li key={p.name} className={`reveal${i ? ` delay-${i}` : ""}`}>
-                <Link href="/places">
+                <div className="trail-stop">
                   <span className="trail-ic"><Icon name={p.icon} /></span>
                   <small>{p.idx}</small>
                   <strong>{p.name}</strong>
-                </Link>
+                </div>
               </li>
             ))}
           </ol>

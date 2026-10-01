@@ -72,9 +72,9 @@ export default function JourneyPage() {
       <Quote />
 
       <CtaBand
-        title="Walk the places that shaped him"
-        text="Brooklyn, Key West, Sicily and Ft. Lauderdale each hold a chapter of the story."
-        primary={{ href: "/places", label: "Explore the Places" }}
+        title="Meet the man behind the story"
+        text="From Brooklyn to Key West to Ft. Lauderdale, discover more about Emil Imbro."
+        primary={{ href: "/about", label: "About the Author" }}
         secondary={{ href: "/book", label: "About the Book" }}
       />
     </>

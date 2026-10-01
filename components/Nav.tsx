@@ -31,6 +31,9 @@ export default function Nav() {
               <Link href={l.href} onClick={close} className={pathname === l.href ? "active" : undefined}>{l.label}</Link>
             </li>
           ))}
+          <li className="nav-cta">
+            <a href={amazonUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary" onClick={close}>Get the Book</a>
+          </li>
         </ul>
         <a href={amazonUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Get the Book</a>
         <button className="menu-toggle" aria-label="Open menu" onClick={() => setOpen((o) => !o)}>

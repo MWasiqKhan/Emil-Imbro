@@ -69,7 +69,7 @@ export default function FlipBook() {
           </a>
         </div>
       </div>
-      <div className="flip-hint" aria-hidden="true"><Icon name="rotate" /><span className="h0">Hover to turn &middot; click to open</span><span className="h1">Click to turn the page</span></div>
+      <div className="flip-hint" aria-hidden="true"><Icon name="rotate" /><span className="h0">Hover to turn &middot; click to open</span><span className="h0 touch">Tap to open the book</span><span className="h1">Tap or click to turn the page</span></div>
     </div>
   );
 }

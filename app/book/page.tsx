@@ -4,11 +4,12 @@ import { Icon } from "@/components/Icons";
 import { amazonUrl } from "@/components/links";
 import PageHero from "@/components/PageHero";
 import BookIntro from "@/components/BookIntro";
+import Trailers from "@/components/Trailers";
 import Quote from "@/components/Quote";
 import Buy from "@/components/Buy";
 
 export const metadata: Metadata = {
-  title: "The Book",
+  title: "About the Book",
   description: "Fate Gave Me Two Lives, a memoir by Emil Imbro about ambition, adversity, family and what really matters.",
 };
 
@@ -23,7 +24,7 @@ export default function BookPage() {
   return (
     <>
       <PageHero
-        crumb="The Book"
+        crumb="About Book"
         eyebrow="A Memoir by Emil Imbro"
         title={<>Fate Gave Me <em>Two Lives</em></>}
         lead="An honest, warm and hopeful memoir about ambition, adversity, family and the freedom to finally ask what matters most."
@@ -53,6 +54,7 @@ export default function BookPage() {
         </div>
       </section>
 
+      <Trailers />
       <BookIntro />
 
       <section className="themes">
