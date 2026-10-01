@@ -1,9 +1,14 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Icon } from "./Icons";
+import { amazonUrl } from "./links";
+import { navLinks } from "./navLinks";
 
 export default function Nav() {
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -19,15 +24,15 @@ export default function Nav() {
   return (
     <header className={`nav${scrolled ? " scrolled" : ""}${open ? " open" : ""}`} id="nav">
       <div className="container">
-        <a href="#home" className="logo"><strong>EMIL IMBRO</strong><small>Author &amp; Traveler</small></a>
+        <Link href="/" className="logo" onClick={close}><strong>EMIL IMBRO</strong><small>Author &amp; Traveler</small></Link>
         <ul className="nav-links">
-          <li><a href="#book" onClick={close}>The Book</a></li>
-          <li><a href="#journey" onClick={close}>Journey</a></li>
-          <li><a href="#about" onClick={close}>About</a></li>
-          <li><a href="#places" onClick={close}>Places</a></li>
-          <li><a href="#contact" onClick={close}>Contact</a></li>
+          {navLinks.map((l) => (
+            <li key={l.href}>
+              <Link href={l.href} onClick={close} className={pathname === l.href ? "active" : undefined}>{l.label}</Link>
+            </li>
+          ))}
         </ul>
-        <a href="#buy" className="btn btn-primary">Get the Book</a>
+        <a href={amazonUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Get the Book</a>
         <button className="menu-toggle" aria-label="Open menu" onClick={() => setOpen((o) => !o)}>
           <Icon name="menu" />
         </button>

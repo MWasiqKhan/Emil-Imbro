@@ -1,4 +1,5 @@
 import { Icon } from "./Icons";
+import { amazonUrl } from "./links";
 import HeroBook from "./HeroBook";
 
 export default function Hero() {
@@ -26,7 +27,7 @@ export default function Hero() {
           </h1>
           <p className="lead fade-up d2">The story of a Brooklyn-born twin who chased success, nearly lost everything, and discovered in his second life the answer to one question: what really matters?</p>
           <div className="hero-actions fade-up d3">
-            <a href="#buy" className="btn btn-primary">Order Your Copy <Icon name="arrow" /></a>
+            <a href={amazonUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary">Order Your Copy <Icon name="arrow" /></a>
             <a href="#book" className="btn btn-ghost">Read the Story</a>
           </div>
           <div className="hero-meta fade-up d4">

@@ -1,8 +1,16 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import { IconSprite } from "@/components/Icons";
+import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
+import BackToTop from "@/components/BackToTop";
+import RevealObserver from "@/components/RevealObserver";
 
 export const metadata: Metadata = {
-  title: "Emil Imbro | Author of Fate Gave Me Two Lives",
+  title: {
+    default: "Emil Imbro | Author of Fate Gave Me Two Lives",
+    template: "%s | Emil Imbro",
+  },
   description: "Official website of Emil Imbro, author of the memoir Fate Gave Me Two Lives.",
 };
 
@@ -22,7 +30,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           rel="stylesheet"
         />
       </head>
-      <body>{children}</body>
+      <body>
+        <IconSprite />
+        <Nav />
+        {children}
+        <Footer />
+        <BackToTop />
+        <RevealObserver />
+      </body>
     </html>
   );
 }

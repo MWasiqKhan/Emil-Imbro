@@ -1,4 +1,5 @@
 import { Icon } from "./Icons";
+import { amazonUrl } from "./links";
 import FlipBook from "./FlipBook";
 import Formats from "./Formats";
 
@@ -18,7 +19,7 @@ export default function Buy() {
           <Formats />
 
           <div className="retailers">
-            <a href="#" className="btn btn-primary"><Icon name="cart" />Buy on Amazon</a>
+            <a href={amazonUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary"><Icon name="cart" />Buy on Amazon</a>
             <a href="#" className="btn btn-dark">Barnes &amp; Noble <Icon name="arrow" /></a>
           </div>
 

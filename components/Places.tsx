@@ -1,6 +1,6 @@
 import { Icon } from "./Icons";
 
-const places = [
+export const places = [
   { cls: "p1", delay: "", icon: "bridge", idx: "01 · NEW YORK", name: "Brooklyn", text: "Where it all began in 1947, a twin in a lively Italian-American family." },
   { cls: "p2", delay: " delay-1", icon: "wave", idx: "02 · FLORIDA", name: "Key West", text: "A winter refuge, where a van parked by the water became a beachside home." },
   { cls: "p3", delay: " delay-2", icon: "mountain", idx: "03 · ITALY", name: "Sicily", text: "His favorite destination, and a way of reconnecting with family past and present." },

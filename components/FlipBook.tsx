@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Icon } from "./Icons";
+import { amazonUrl } from "./links";
 
 /* eslint-disable @next/next/no-img-element */
 
@@ -44,13 +45,13 @@ export default function FlipBook() {
             <div className="pb-edge"></div>
             <div className="pb-back-cover"><img src="/images/cover-back.png" alt="Back cover of Fate Gave Me Two Lives" /></div>
 
-            <div className="pb-page3"><img src="/images/page-3.png" alt="Book page 7" /></div>
+            <div className="pb-page3"><img src="/images/page-3.png" alt="Book page 11" /></div>
             <div className="pb-leaf pb-page pb-p2">
-              <div className="pb-face"><img src="/images/page-2.png" alt="Book page 6" /></div>
+              <div className="pb-face"><img src="/images/page-2.png" alt="Book page 10" /></div>
               <div className="pb-face pb-back"></div>
             </div>
             <div className="pb-leaf pb-page pb-p1">
-              <div className="pb-face"><img src="/images/page-1.png" alt="Book page 5, Introduction" /></div>
+              <div className="pb-face"><img src="/images/page-1.png" alt="Book page 9, Chapter 1: Growing Up in Bensonhurst Shaped My View of Life" /></div>
               <div className="pb-face pb-back"></div>
             </div>
             <div className="pb-leaf pb-cover">
@@ -61,7 +62,7 @@ export default function FlipBook() {
         </div>
 
         <div className="pb-overlay">
-          <a className="pb-buy" href="#">
+          <a className="pb-buy" href={amazonUrl} target="_blank" rel="noopener noreferrer">
             <span className="pb-buy-text">Buy the book<br />to read more</span>
             <span className="pb-rule"></span>
             <svg className="pb-arrow" viewBox="0 0 120 40" fill="none" stroke="currentColor" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M6 20h104" /><path d="M92 6l18 14-18 14" /></svg>
