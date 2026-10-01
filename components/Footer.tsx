@@ -17,7 +17,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer-bottom">
-          <span>&copy; 2026 Emil Imbro. All rights reserved.</span>
+          <span>&copy; 2026 Emil Imbro. All rights reserved. Powered by <a href="https://fortunepublishers.com/" target="_blank" rel="noopener noreferrer">Fortune Publishers</a></span>
           <nav>{navLinks.map((l) => <Link key={l.href} href={l.href}>{l.label}</Link>)}<a href={amazonUrl} target="_blank" rel="noopener noreferrer">Buy on Amazon</a></nav>
         </div>
       </div>
