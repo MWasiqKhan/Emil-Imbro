@@ -1,6 +1,6 @@
 import { Icon } from "./Icons";
 import { amazonUrl } from "./links";
-import HeroBook from "./HeroBook";
+import FlipBook from "./FlipBook";
 
 export default function Hero() {
   return (
@@ -37,7 +37,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <HeroBook />
+        <div className="hero-book fade-up d5"><FlipBook /></div>
       </div>
 
       <a href="#book" className="scroll-cue">Scroll<span></span></a>

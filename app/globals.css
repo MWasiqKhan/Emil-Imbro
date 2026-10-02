@@ -212,42 +212,7 @@ section { position: relative; padding: 130px 0; }
 .d1 { animation-delay: 1.8s; } .d2 { animation-delay: 2.7s; } .d3 { animation-delay: 2.9s; } .d4 { animation-delay: 3.1s; } .d5 { animation-delay: 2.3s; }
 @keyframes fadeUp { to { opacity: 1; transform: none; } }
 
-/* 3D book */
-.book-stage { perspective: 1800px; display: grid; place-items: center; }
-.book {
-  position: relative; width: min(360px, 78vw); aspect-ratio: 880 / 1360;
-  transform-style: preserve-3d; transform: rotateY(-24deg) rotateX(6deg);
-  transition: transform 0.8s var(--ease);
-  animation: floatBook 6s ease-in-out 3s infinite;
-}
-.book-stage:hover .book { transform: rotateY(-8deg) rotateX(2deg); }
-.book img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; border-radius: 2px 6px 6px 2px; }
-.book .front { transform: translateZ(18px); box-shadow: inset 4px 0 10px rgba(0,0,0,0.25); }
-.book .front::after { content: ""; }
-.book .spine {
-  position: absolute; top: 0; left: 0; width: 36px; height: 100%;
-  background: linear-gradient(90deg, #243a4a, #3c5566 60%, #1b2d3a);
-  transform-origin: left center; transform: translateZ(18px) rotateY(-90deg);
-}
-.book .pages {
-  position: absolute; top: 3px; right: 0; width: 34px; height: calc(100% - 6px);
-  background: repeating-linear-gradient(90deg, #f3ece0 0 2px, #ddd3c3 2px 3px);
-  transform-origin: right center; transform: translateZ(18px) rotateY(-90deg);
-}
-.book .back { transform: translateZ(-18px) rotateY(180deg); }
-.book .shine {
-  position: absolute; inset: 0; transform: translateZ(19px); pointer-events: none; border-radius: 2px 6px 6px 2px;
-  background: linear-gradient(105deg, transparent 30%, rgba(255,255,255,0.28) 45%, transparent 60%);
-  background-size: 250% 100%; animation: shine 5s ease-in-out 3.2s infinite;
-}
-.book-shadow {
-  width: 70%; height: 30px; margin-top: 34px; border-radius: 50%;
-  background: radial-gradient(ellipse, rgba(0,0,0,0.55), transparent 70%);
-  animation: shadowPulse 6s ease-in-out 3s infinite;
-}
 @keyframes floatBook { 0%,100% { translate: 0 0; } 50% { translate: 0 -16px; } }
-@keyframes shadowPulse { 0%,100% { transform: scale(1); opacity: 1; } 50% { transform: scale(0.85); opacity: 0.6; } }
-@keyframes shine { 0% { background-position: 150% 0; } 60%,100% { background-position: -100% 0; } }
 
 .scroll-cue {
   position: absolute; left: 50%; bottom: 30px; transform: translateX(-50%);
@@ -481,6 +446,13 @@ section { position: relative; padding: 130px 0; }
 
 .flip-hint { text-align: center; margin-top: 26px; font-size: 0.72rem; letter-spacing: 0.24em; text-transform: uppercase; color: var(--muted); display: flex; gap: 10px; justify-content: center; align-items: center; }
 .flip-hint .icon { width: 16px; height: 16px; animation: spin 4s linear infinite; }
+/* Same book in the dark hero: bigger and floating */
+.hero-book .pb { --pb-w: min(350px, 40vw); }
+.hero-book .pb-scene { animation: floatBook 6s ease-in-out 3s infinite; }
+.hero-book .pb-wrap { transition: filter .6s ease, transform 1.1s var(--pb-curve); }
+.hero-book .pb[data-step="1"] .pb-wrap, .hero-book .pb[data-step="2"] .pb-wrap, .hero-book .pb[data-step="3"] .pb-wrap { transform: scale(0.8); }
+.hero-book .flip-hint { color: rgba(255,255,255,0.6); }
+.hero-book .pb-shadow { background: radial-gradient(ellipse at center, rgba(0,0,0,.6), rgba(0,0,0,0) 70%); }
 @keyframes spin { to { transform: rotate(360deg); } }
 
 .formats { display: flex; gap: 14px; flex-wrap: wrap; margin: 30px 0 34px; }
@@ -774,7 +746,6 @@ section { position: relative; padding: 130px 0; }
   }
   .hero-grid, .book-intro .head, .two-lives, .about-grid, .buy-grid, .contact-grid { grid-template-columns: 1fr; }
   .hero-grid { text-align: left; gap: 60px; }
-  .book { width: min(280px, 70vw); }
   .timeline::before, .timeline .progress { left: 8px; }
   .t-item, .t-item:nth-child(odd) { width: 100%; margin-left: 0; padding: 0 0 56px 44px; text-align: left; }
   .t-item:nth-child(even) { text-align: left; }
@@ -785,6 +756,7 @@ section { position: relative; padding: 130px 0; }
   .portrait .badge { left: 10px; }
   .facts { grid-template-columns: 1fr; }
   .pb { --pb-w: min(240px, 42vw); }
+  .hero-book .pb { --pb-w: min(270px, 44vw); }
   .pb-arrow { width: calc(var(--pb-w) * .26); animation-name: pbNudgeDown; }
   .quote { background-attachment: scroll; }
   .page-hero { padding: 160px 0 110px; }
