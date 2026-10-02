@@ -16,11 +16,11 @@ export default function Home() {
       <Preloader />
       <Hero />
       <Marquee />
+      <Gallery />
+      <About />
       <BookIntro />
       <Journey />
       <Quote />
-      <About />
-      <Gallery />
       <Places />
       <Buy />
       <Contact />

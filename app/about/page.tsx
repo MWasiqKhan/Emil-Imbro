@@ -27,8 +27,8 @@ export default function AboutPage() {
         lead="Brooklyn-born memoirist, Italian heritage writer and world traveler. Now living near Ft. Lauderdale with his wife."
       />
 
-      <About />
       <Gallery />
+      <About />
 
       <section className="values">
         <div className="container">
