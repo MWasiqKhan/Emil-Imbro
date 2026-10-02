@@ -5,6 +5,7 @@ import BookIntro from "@/components/BookIntro";
 import Journey from "@/components/Journey";
 import Quote from "@/components/Quote";
 import About from "@/components/About";
+import Gallery from "@/components/Gallery";
 import Places from "@/components/Places";
 import Buy from "@/components/Buy";
 import Contact from "@/components/Contact";
@@ -19,6 +20,7 @@ export default function Home() {
       <Journey />
       <Quote />
       <About />
+      <Gallery />
       <Places />
       <Buy />
       <Contact />
