@@ -20,7 +20,6 @@ export default function Buy() {
 
           <div className="retailers">
             <a href={amazonUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary"><Icon name="cart" />Buy on Amazon</a>
-            <a href="#trailers" className="btn btn-dark">Watch the Trailer <Icon name="arrow" /></a>
           </div>
 
           <div className="book-details">

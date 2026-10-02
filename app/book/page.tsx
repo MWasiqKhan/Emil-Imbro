@@ -4,7 +4,6 @@ import { Icon } from "@/components/Icons";
 import { amazonUrl } from "@/components/links";
 import PageHero from "@/components/PageHero";
 import BookIntro from "@/components/BookIntro";
-import Trailers from "@/components/Trailers";
 import Quote from "@/components/Quote";
 import Buy from "@/components/Buy";
 
@@ -54,7 +53,6 @@ export default function BookPage() {
         </div>
       </section>
 
-      <Trailers />
       <BookIntro />
 
       <section className="themes">
