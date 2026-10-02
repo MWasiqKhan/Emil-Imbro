@@ -292,7 +292,7 @@ section { position: relative; padding: 130px 0; }
 /* ---------- Quote ---------- */
 .quote {
   padding: 170px 0; text-align: center; color: #fff; overflow: hidden;
-  background: linear-gradient(rgba(14,27,38,0.78), rgba(14,27,38,0.86)), url("/images/cover-front.png") center 30% / cover fixed;
+  background: linear-gradient(rgba(14,27,38,0.55), rgba(14,27,38,0.72)), url("/images/gallery-sunset-beach.webp") center 50% / cover fixed;
 }
 .quote .icon-quote { width: 54px; height: 54px; margin: 0 auto 30px; color: var(--gold); stroke-width: 1.2; }
 .quote blockquote {
