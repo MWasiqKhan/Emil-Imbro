@@ -16,8 +16,8 @@ export default function Home() {
       <Preloader />
       <Hero />
       <Marquee />
-      <Gallery />
       <About />
+      <Gallery />
       <BookIntro />
       <Journey />
       <Quote />
