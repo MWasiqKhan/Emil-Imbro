@@ -780,6 +780,9 @@ section { position: relative; padding: 130px 0; }
   .nav-links { gap: 6px 5px; margin-top: 10px; padding: 9px 0 10px; }
   .nav-links a { padding: 6px 10px; font-size: 0.6rem; letter-spacing: 0.06em; }
   .quote { padding: 170px 0 62px; }
+  .quote .icon-quote { width: 40px; height: 40px; margin-bottom: 20px; }
+  .quote blockquote { font-size: 1.4rem; }
+  .quote cite { margin-top: 22px; font-size: 0.66rem; letter-spacing: 0.22em; }
   .cta-band { padding: 70px 0; }
   .ways { padding-bottom: 70px; }
   .feature { padding: 30px 24px; }
