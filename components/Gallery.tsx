@@ -9,8 +9,8 @@ const photos = [
   { src: "/images/gallery-office.jpg", alt: "Emil Imbro at his office desk", caption: "The business years", cls: "tall" },
   { src: "/images/gallery-brooklyn-bridge.webp", alt: "Emil Imbro celebrating on a bike on the Brooklyn Bridge", caption: "Back on the Brooklyn Bridge", cls: "tall" },
   { src: "/images/gallery-van-selfie.webp", alt: "Emil Imbro in a sun hat in front of his van", caption: "Life on the road", cls: "tall" },
-  { src: "/images/gallery-van-sunset.webp", alt: "Emil Imbro's van parked by the water at sunrise", caption: "A home on wheels at sunrise", cls: "wide" },
-  { src: "/images/gallery-sunset-beach.webp", alt: "The sun setting over calm water, with sea oats in the foreground and a pelican in flight", caption: "Sunset by the sea", cls: "tall last" },
+  { src: "/images/gallery-van-sunset.webp", alt: "Emil Imbro's van parked by the water at sunset", caption: "A home on wheels at sunset", cls: "wide" },
+  { src: "/images/gallery-sunset-beach.webp", alt: "The sun rising over calm water, with sea oats in the foreground and a pelican in flight", caption: "Sunrise by the sea", cls: "tall last" },
 ];
 
 export default function Gallery() {
