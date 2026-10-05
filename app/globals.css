@@ -291,12 +291,12 @@ section { position: relative; padding: 130px 0; }
 
 /* ---------- Quote ---------- */
 .quote {
-  padding: 250px 0 90px; text-align: center; color: #fff; overflow: hidden;
+  padding: 290px 0 74px; text-align: center; color: #fff; overflow: hidden;
   background: linear-gradient(rgba(14,27,38,0.55), rgba(14,27,38,0.72)), url("/images/gallery-sunset-beach.webp") center 50% / cover fixed;
 }
 .quote .icon-quote { width: 54px; height: 54px; margin: 0 auto 30px; color: var(--gold); stroke-width: 1.2; }
 .quote blockquote {
-  font-family: var(--f-display); font-style: italic; font-size: clamp(1.5rem, 3.2vw, 2.6rem);
+  font-family: var(--f-display); font-style: italic; font-size: clamp(1.8rem, 4vw, 3.2rem);
   line-height: 1.25; max-width: 900px; margin: 0 auto;
 }
 .quote blockquote span { color: var(--gold); }
@@ -779,7 +779,7 @@ section { position: relative; padding: 130px 0; }
   .nav .btn { padding: 9px 14px; font-size: 0.6rem; letter-spacing: 0.1em; white-space: nowrap; }
   .nav-links { gap: 6px 5px; margin-top: 10px; padding: 9px 0 10px; }
   .nav-links a { padding: 6px 10px; font-size: 0.6rem; letter-spacing: 0.06em; }
-  .quote { padding: 160px 0 60px; }
+  .quote { padding: 170px 0 62px; }
   .cta-band { padding: 70px 0; }
   .ways { padding-bottom: 70px; }
   .feature { padding: 30px 24px; }
